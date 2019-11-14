@@ -1,0 +1,13 @@
+.btn {
+    color: $Dark-Cyan;
+    box-shadow: 0 0 1rem hsl(0, 0%, 58%);
+
+    &:hover {
+        transform: translateY(-.5rem);
+        box-shadow: 0 1rem 2rem hsl(0, 0%, 58%);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}

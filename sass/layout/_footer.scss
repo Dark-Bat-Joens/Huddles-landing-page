@@ -1,0 +1,200 @@
+.footer {
+    position: relative;
+    background-color: $Dark-Cyan;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    @include respond(phone) {
+        padding-bottom: 25rem;
+    }
+
+
+    &__content {
+
+        margin: 0 auto;
+        width: 90%;
+        color: $color-white !important;
+
+        @include clearfix;
+
+        &--item {
+            width: 32%;
+            
+            float: left;
+            left: 0;
+            padding: 1rem;
+            margin-left: 2rem;
+
+            @include respond(tab-land) {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                padding: 0;
+                margin-bottom: -5rem;
+            }
+
+            & a {
+                transition: all .3s;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+
+            & h2 {
+                font-size: 4rem;
+                margin-bottom: 2rem;
+
+                @include respond(tab-land) {
+                    text-align: center;
+                }
+            }
+
+            & h3 {
+                font-size: 1.9rem;
+                text-transform: uppercase;
+
+                @include respond(tab-land) {
+                    text-align: center;
+                }
+            }
+
+            & p {
+                font-size: 1.3rem;
+                width: 70%;
+
+
+                @include respond(tab-land) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            & .icon-box {
+                margin-bottom: 1rem;
+
+                & a {
+                    color: $color-white;
+                    font-size: 2.8rem;
+                    margin-right: 2rem;
+                }
+            }
+
+            & nav {
+                margin-top: 8rem;
+            }
+
+            & .copyright {
+                font-size: 1.5rem;
+        
+
+                @include respond(tab-land) {
+
+                    &--box {
+                        width: 90%;
+                        
+                        position: absolute;
+                        bottom: 2rem;
+
+                        &__content {
+                            position: static;
+                            left: 12%;
+                        }
+                    }
+                }
+            }
+
+            &--1 {
+                width: 25%;
+
+                @include respond(tab-land) {
+                    width: 100%;
+                }
+            }
+
+            &--2 {
+                width: 50%;
+                float: left;
+                left: 0;
+                
+                height: 100%;
+
+                @include respond(tab-land) {
+                    float: none;
+                    width: 100%;
+                    
+                    &:not(:last-child) {
+                        margin-bottom: -8rem;
+                    }
+                }
+
+                & nav {
+                    margin-top: 8rem;
+
+                    &>ul {
+
+                        &>li {
+                            list-style-type: none;
+
+                            &>a {
+                                font-size: 1.5rem;
+                                line-height: 2;
+                                color: $Gray-Blue;
+
+                                &:hover {
+                                    margin-left: .5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__input {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        width: 65%;
+        border-radius: .2rem;
+        border: none;
+        outline: none;
+        font-family: 'Poppins';
+
+        @include respond(tab-land) {
+            width: 95% !important;
+        }
+
+        @include respond(phone) {
+            width: 90% !important;
+        }
+    }
+
+    & .header__caption--btn {
+        position: relative;
+        top: 3rem;
+        left: 10rem;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+        font-family: 'Poppins';
+        border-radius: .3rem;
+        transition: transform .3s;
+
+        @include respond(tab-land) {
+            width: 100% !important;
+            left: 0;
+        }
+        
+    }
+}
+
+.copyright--box__content {
+
+    @media screen and (min-width: 1201px) {
+        margin-top: -5rem;
+    }
+
+}

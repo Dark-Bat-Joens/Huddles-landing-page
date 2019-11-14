@@ -1,0 +1,45 @@
+@keyframes floating {
+    0% {
+        transform: translateY(.5rem);
+    }
+
+    50% {
+        transform: translateY(-.5rem);
+    }
+
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+
+@keyframes floating2 {
+    0% {
+        transform: translateY(-48rem) rotate(-45deg);   
+    }
+
+    50% {
+        transform: translateY(-52rem) rotate(-45deg);   
+    }
+
+    100% {
+        transform: translateY(-48rem) rotate(-45deg);   
+    }
+}
+
+
+
+
+@keyframes floating3 {
+    0% {
+        transform: translate(0, 15rem) rotate(-35deg);
+    }
+
+    50% {
+        transform: translate(0, 25rem) rotate(-35deg);
+    }
+
+    100% {
+        transform: translate(0, 15rem) rotate(-35deg);
+    }
+}

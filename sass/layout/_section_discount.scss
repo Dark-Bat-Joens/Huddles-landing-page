@@ -1,0 +1,63 @@
+.section {
+
+    &__discount {
+        padding-bottom: 10rem;
+
+        &--box {
+            text-align: center;
+            width: 50%;
+            height: 45vh;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: $color-white;
+            box-shadow: 0 0 4rem hsl(0, 0%, 93%);
+            transition: transform .3s;
+
+            @include respond(tab-port) {
+                width: 80%;
+                height: 28rem !important;
+            }
+
+            @include respond(phone) {
+                height: 16rem !important;   
+            }
+
+            &:hover {
+                transform: translateY(-2rem);        
+                box-shadow: 0 0 4rem hsl(0, 0%, 89%);
+            }
+        }
+
+        &--content {
+            position: relative;
+            top: 6rem;
+
+            & h1 {
+
+                @include respond(phone) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & p {
+
+                @include respond(phone) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            @include respond(phone) {
+                top: 1rem;
+            }
+
+            & .header__caption--btn {
+                position: relative;
+                top: 5rem;
+
+                @include respond(phone) {
+                    top: 3rem;
+                }
+            }
+        }
+    }
+}

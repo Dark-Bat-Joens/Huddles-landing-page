@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: inherit;
+    background-color: $Gray-Blue;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    transition: all .5s;
+    &-track {
+        background-color: $color-white;
+    }
+
+    &-thumb {
+        background-color: #d2d2d2;
+    }
+}

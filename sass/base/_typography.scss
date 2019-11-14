@@ -1,0 +1,23 @@
+body {
+    font-family: 'Poppins';
+}
+
+a,
+a:link,
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+h1 {
+    font-size: 3rem;
+    color: $Dark-Cyan;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: 'Open sans';
+    font-size: 2rem;
+    color: $Mid-Blue;
+}
